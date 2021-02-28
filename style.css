@@ -1,0 +1,222 @@
+body{
+    background-image: radial-gradient(circle at 50% -20.71%, #ffdcf4 0, #ffd3f3 12.5%, #ffc9f2 25%, #ffbff2 37.5%, #f2b5f2 50%, #e2acf3 62.5%, #d0a4f4 75%, #bc9ff6 87.5%, #a69bf8 100%);
+}
+
+#logo{
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    transition: all .50s ease;
+    transition-duration: 1s;
+    height: 150px;
+}
+#logo:hover{
+    height: 155px;
+    margin-bottom: 145px;
+    transition: all .50s ease;
+}
+
+.uvod{
+    display: grid;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navmenu a{
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px 20px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.navmenu ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navmenu li{
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: #B829FA;
+    margin-right: 50px;
+    transition: all .50s ease-out;
+    transition-duration: 1s;
+    box-shadow: 5px 5px 10px #6d6d6d;
+}
+.navmenu li:hover{
+    transform: scale(1.1);
+    transition: all .50s ease-in-out;
+    background-color: chartreuse;
+    transition-duration: 0.5s;
+    box-shadow: 11.31px 11.31px 10px #6d6d6d;
+}
+h1{
+    font-variant: small-caps;
+    color: #B829FA;
+}
+h2{
+    color: #f47df4;
+}
+.obsah{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+.pozadiobsahu{
+    grid-column-start: 2;
+    background-color: #fad8fa;
+    padding: 30px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px #696969;
+}
+.malovani{
+    display: flex;
+    flex-direction: row;
+}
+.malovanip{
+    padding-left: 30px;
+}
+h1, h2, p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+h1, h2{
+    text-shadow: 1px 1px 2px black;
+}
+.contacts ul{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+.contacts li{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+.contacts li{
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #B829FA;
+    transition: all .50s ease-out;
+    transition-duration: 1s;
+    box-shadow: 5px 5px 10px #6d6d6d;
+    color: white;
+}
+.contacts li:hover{
+    transform: scale(1.1);
+    transition: all .50s ease-in-out;
+    background-color: chartreuse;
+    transition-duration: 0.5s;
+    box-shadow: 11.31px 11.31px 10px #6d6d6d;
+}
+.galerie{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all .50s ease-in-out;
+    transition-duration: 0.5s;
+}
+.galerie img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: all .50s ease-in-out;
+    transition-duration: 0.5s;
+}
+.galerieporadi{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.galerie:hover{
+    background-color: chartreuse;
+    transition: all .50s ease-in-out;
+    transition-duration: 0.5s;
+}
+.galerie img:hover{
+    opacity: 1;
+    transition: all .50s ease-in-out;
+    transition-duration: 0.5s;
+}
+.galerie p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-align: center;
+    font-weight: bold;
+    opacity: 1;
+    transition: all .50s ease-in-out;
+    transition-duration: 0.5s;
+}
+.galerie a{
+    text-decoration: none;
+    color: #B829FA;
+}
+.galerie p:hover{
+    opacity: 1;
+    transition: all .50s ease-in-out;
+    transition-duration: 0.5s;
+}
+
+@media only screen and (max-width: 1030px){
+    .obsah{
+        grid-template-columns: 10% 80% 10%;
+    }
+    .malovani{
+        flex-direction: column;
+    }
+    .malovani video{
+        margin: auto;
+    }
+    .malovanip{
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .obsah{
+        grid-template-columns: 5% 90% 5%;
+    }
+    .galerie{
+        width: 100px;
+        height: 100px;
+    }
+    .galerie img{
+        width: 100px;
+        height: 50px;
+    }
+    body{
+        font-size: smaller;
+    }
+}
+@media only screen and (max-width: 450px){
+    .malovani video{
+        width: 250px;
+        height: auto;
+    }
+    .galerie{
+        width: 80px;
+        height: 80px;
+    }
+    .galerie img{
+        width: 80px;
+        height: 30px;
+    }
+    #logo{
+        height: 100px;
+    }
+    
+}
